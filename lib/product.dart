@@ -66,12 +66,7 @@ class _ProductScreenState extends State<ProductScreen> {
     ),
   ];
 
-  List<Product> get filteredProducts {
-    if (selectedCategory == 'ALL') {
-      return products;
-    }
-    return products.where((p) => p.category == selectedCategory).toList();
-  }
+  List<Product> get filteredProducts => products;
 
   @override
   Widget build(BuildContext context) {
